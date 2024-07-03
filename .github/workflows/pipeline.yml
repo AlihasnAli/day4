@@ -3,7 +3,7 @@ name: "Push Simple App to Win Server"
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   job-deployment:
