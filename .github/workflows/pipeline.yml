@@ -1,0 +1,32 @@
+name: "Push Simple App to Win Server"
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  job-deployment:
+    name: Deployment to Server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Code Checkout
+        uses: actions/checkout@v4
+
+      - name: Step 2 - Copy To Win Server
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: 157.175.217.156
+          username: Administrator
+          password: "(5xJiOansTyR(7@8&qDgM*RzZZIVIgcG"
+          port: 80
+          source: "index.html"
+          target: C:\inetpub\wwwroot\
+
+      - name: Step 3 - Copy 
+        run: C:\inetpub\wwwroot\
+
+      - name: Step 4 - Copy 
+        uses: actions/checkout@v4
+
+
