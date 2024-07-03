@@ -19,7 +19,7 @@ jobs:
           host: 157.175.217.156
           username: Administrator
           password: (5xJiOansTyR(7@8&qDgM*RzZZIVIgcG
-          port: 80
+          port: 22
           source: "index.html"
           target: C:\inetpub\wwwroot\
 
