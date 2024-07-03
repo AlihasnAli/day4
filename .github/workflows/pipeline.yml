@@ -17,16 +17,10 @@ jobs:
         uses: appleboy/scp-action@v0.1.7
         with:
           host: 157.175.217.156
-          username: "Administrator"
-          password: "(5xJiOansTyR(7@8&qDgM*RzZZIVIgcG"
+          username: Administrator
+          password: (5xJiOansTyR(7@8&qDgM*RzZZIVIgcG
           port: 80
           source: "index.html"
           target: C:\inetpub\wwwroot\
-
-      - name: Step 3 - Copy 
-        run: C:\inetpub\wwwroot\
-
-      - name: Step 4 - Copy 
-        uses: actions/checkout@v4
 
 
